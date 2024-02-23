@@ -1,6 +1,10 @@
 import { Scroll, useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
 
 const Section = (props) => {
   return (
@@ -81,14 +85,19 @@ export const Overlay = () => {
         </Section>
         <Section opacity={opacityLastSection}>
           <h1 className="font-semibold font-[Circular_bold] text-2xl">
-            🤙 Call me maybe?
+            🤙 Contact me maybe?
           </h1>
           <p className="text-gray-500">
             I'm very expensive but you won't regret it
           </p>
-          <p className="mt-6 p-3 bg-slate-200 rounded-lg">
-            📞 <a href="tel:(+42) 4242-4242-424242">(+91) 8219962934</a>
+          
+          <p className="mt-6 p-3 bg-zinc-200 flex items-center justify-center gap-10  rounded-lg">
+             <a className="text-4xl " href="https://github.com/vrutansh"><FaGithub /></a> 
+             <a className="text-4xl" href="#"><CiMail /></a>
+             <a className="text-4xl" href="https://www.instagram.com/thenameisvrutansh/"><FaInstagram/></a>
+             <a className="text-3xl" href=""><FaFacebookF /></a>
           </p>
+          
         </Section>
       </div>
     </Scroll>
